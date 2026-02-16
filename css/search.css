@@ -1,0 +1,61 @@
+        /* Container Pencarian */
+.search-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Biar persis di tengah atas */
+    z-index: 4000;
+    width: 100%;
+    max-width: 400px; /* Lebar maksimal kotak search */
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15); /* Transparan putih */
+    backdrop-filter: blur(15px); /* Efek blur kaca */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px; /* Melengkung sempurna */
+    padding: 5px 15px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efek saat diklik (Focus) */
+.search-form:focus-within {
+    background: rgba(255, 255, 255, 0.25);
+    width: 110%; /* Sedikit melebar saat aktif */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.search-input {
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.search-btn:hover {
+    transform: scale(1.1); /* Efek membesar dikit saat hover */
+}
