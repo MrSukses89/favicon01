@@ -2,16 +2,14 @@
 const koleksiWallpaper = [
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920",
     "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920",
-    "wallpaper/jp2.jpg",
     "wallpaper/gunung1.jpg",
     "wallpaper/4.jpg",
-    "wallpaper/2.jpg",
     "wallpaper/3.jpg",
     "wallpaper/6.jpg",
     "wallpaper/5.jpg",
+    "wallpaper/7.jpg",
     "wallpaper/a1.jpeg",
     "wallpaper/a2.jpeg",
-    "wallpaper/Wallpaper3.jpg",
     "wallpaper/Wllpaper 2.jpg"
 ];
 
