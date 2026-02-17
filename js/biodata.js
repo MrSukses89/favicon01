@@ -48,7 +48,7 @@ function checkAccess() {
 
 /* --- REDIRECT KE ONEDRIVE --- */
 function goToDrive() {
-    const linkDrive = "https://docs.google.com/document/d/1zvuewZgBrW2ACWnDQ0TRdpMAJRSUpHo4/edit?usp=sharing&ouid=117181866676791069145&rtpof=true&sd=true";
+    const linkDrive = "#";
     window.open(linkDrive, "_blank");
 }
 
