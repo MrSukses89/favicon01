@@ -48,7 +48,7 @@ function checkAccess() {
 
 /* --- REDIRECT KE ONEDRIVE --- */
 function goToDrive() {
-    const linkDrive = "#";
+    const linkDrive = "https://1drv.ms/w/c/143EA9686221F233/IQCAHFBKRsnASrZa4a91ShE9AaWLtpmKiVJvPPYdhH-rLEg?e=XXrruz";
     window.open(linkDrive, "_blank");
 }
 
