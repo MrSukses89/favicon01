@@ -2,15 +2,14 @@
 const koleksiWallpaper = [
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920",
     "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920",
-    "wallpaper/gunung1.jpg",
-    "wallpaper/4.jpg",
-    "wallpaper/3.jpg",
-    "wallpaper/6.jpg",
-    "wallpaper/5.jpg",
-    "wallpaper/7.jpg",
-    "wallpaper/a1.jpeg",
-    "wallpaper/a2.jpeg",
-    "wallpaper/Wllpaper 2.jpg"
+    "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920",
+    "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1920",
 ];
 
 let currentIndex = 0;
