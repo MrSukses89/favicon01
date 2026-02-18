@@ -1,61 +1,70 @@
-        /* Container Pencarian */
-.search-wrapper {
+.google-search-container {
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 50%;
-    transform: translateX(-50%); /* Biar persis di tengah atas */
-    z-index: 4000;
-    width: 100%;
-    max-width: 400px; /* Lebar maksimal kotak search */
-    display: flex;
-    justify-content: center;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 580px;
+    z-index: 9999;
 }
 
-.search-form {
+.google-search-box {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.15); /* Transparan putih */
-    backdrop-filter: blur(15px); /* Efek blur kaca */
+    background: rgba(255, 255, 255, 0.2); /* Efek Kaca */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px; /* Melengkung sempurna */
-    padding: 5px 15px;
-    width: 100%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-/* Efek saat diklik (Focus) */
-.search-form:focus-within {
-    background: rgba(255, 255, 255, 0.25);
-    width: 110%; /* Sedikit melebar saat aktif */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+/* Efek saat box di-hover atau diklik */
+.google-search-box:hover, .google-search-box:focus-within {
+    background: rgba(255, 255, 255, 0.95); /* Menjadi solid putih saat aktif mirip Google asli */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
 }
 
-.search-input {
+.google-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+#mainSearchInput {
+    flex: 1;
     background: none;
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+    color: #202124;
+    padding: 5px 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
-.search-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+#mainSearchInput::placeholder {
+    color: rgba(0, 0, 0, 0.4);
 }
 
-.search-btn {
-    background: none;
-    border: none;
-    color: white;
+.google-mic {
+    color: #4285F4;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: transform 0.2s;
 }
 
-.search-btn:hover {
-    transform: scale(1.1); /* Efek membesar dikit saat hover */
+.google-mic:hover {
+    transform: scale(1.2);
+}
+
+/* Menyesuaikan warna teks saat box masih transparan */
+.google-search-box:not(:focus-within) #mainSearchInput {
+    color: white;
+}
+.google-search-box:not(:focus-within) #mainSearchInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
