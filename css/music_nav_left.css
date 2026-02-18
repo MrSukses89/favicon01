@@ -35,11 +35,62 @@
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-.song-list-container { max-height: 400px; overflow-y: auto; padding-right: 5px; }
 
-/* Custom Scrollbar */
-.song-list-container::-webkit-scrollbar { width: 4px; }
-.song-list-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+
+
+
+
+
+
+/* --- MODERN CUSTOM SCROLLBAR --- */
+.song-list-container::-webkit-scrollbar {
+    width: 6px; /* Sedikit lebih tebal biar enak dilihat */
+}
+
+.song-list-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05); /* Background jalanan scrollbar */
+    border-radius: 10px;
+}
+
+.song-list-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff); /* Warna gradasi biar senada sama progress bar */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+/* Efek saat scrollbar disentuh/di-hover */
+.song-list-container::-webkit-scrollbar-thumb:hover {
+    background: #00c6ff; 
+    width: 10px; /* Efek visual seolah membesar */
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tambahkan smooth scrolling pada container */
+.song-list-container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding-right: 8px;
+    scroll-behavior: smooth; /* Biar scroll-nya halus, gak patah-patah */
+    scrollbar-width: thin; /* Untuk Firefox */
+    scrollbar-color: #00c6ff rgba(255, 255, 255, 0.1); /* Untuk Firefox */
+}
+
+
+
+
+
+
 
 /* Controls & UI Elements */
 .music-header { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 15px; opacity: 0.7; }
@@ -108,4 +159,104 @@
     opacity: 1 !important;
     color: #ff4b2b !important; /* Berubah jadi merah pas di-hover */
     transform: scale(1.2);
+}
+
+
+
+
+
+/* Container utama agar melayang di tengah atas */
+.search-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 90%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    /* Memberi efek glow halus di sekitar bar */
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Input Search-nya */
+#songSearch {
+    width: 100%;
+    padding: 14px 20px 14px 45px; /* Padding kiri lebih besar untuk ikon */
+    font-size: 15px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1); /* Transparan putih */
+    backdrop-filter: blur(15px) saturate(160%); /* Efek blur kaca */
+    -webkit-backdrop-filter: blur(15px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px; /* Membuat lonjong sempurna */
+    outline: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+}
+
+/* Placeholder (Teks bayangan di dalam) */
+#songSearch::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* Ikon Pencarian */
+.search-icon {
+    position: absolute;
+    left: 18px;
+    color: #00c6ff; /* Warna ikon senada dengan player kamu */
+    font-size: 16px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* --- EFEK INTERAKTIF --- */
+
+/* Saat input diklik (Focus) */
+#songSearch:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #00c6ff;
+    width: 105%; /* Melebar halus saat aktif */
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+}
+
+/* Saat focus, ikon ikut menyala */
+#songSearch:focus + .search-icon {
+    color: #ffffff;
+    transform: scale(1.1);
+    text-shadow: 0 0 8px #00c6ff;
+}
+
+
+
+
+/* Pastikan list item punya pointer tangan sesuai permintaanmu sebelumnya */
+.playlist-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    color: white; /* Supaya teks terlihat di glassmorphism */
+}
+
+/* Warna saat lagu sedang diputar */
+.playlist-item.active {
+    background: rgba(0, 198, 255, 0.2);
+    border-left: 4px solid #00c6ff;
+}
+
+/* Styling tambahan untuk search agar tidak nempel ke header */
+.search-wrapper {
+    position: relative; /* Ganti dari fixed */
+    top: 0;
+    left: 0;
+    transform: none;
+    
+    width: 100%;
 }
