@@ -35,7 +35,7 @@ function updateClock() {
     const secHand = document.querySelector(".sec-hand");
 
     if (secHand) {
-        // Anti-Glitch: Matikan transisi saat detik kembali ke 0 agar tidak putar balik 360 derajat
+        // Anti-Glitch: Matikan transisi saat detik kembali ke 0
         if (s === 0) {
             secHand.style.transition = "none";
         } else {
@@ -62,12 +62,15 @@ function renderCalendar() {
 
     daysContainer.innerHTML = "";
 
-    // Logika Tanggal
-    const firstDayIndex = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
-    const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
-    const prevLastDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+    // Dapatkan info bulan yang sedang aktif di state
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
 
-    // 1. Padding Bulan Sebelumnya
+    const firstDayIndex = new Date(year, month, 1).getDay();
+    const lastDay = new Date(year, month + 1, 0).getDate();
+    const prevLastDay = new Date(year, month, 0).getDate();
+
+    // 1. Padding Bulan Sebelumnya (Angka abu-abu)
     for (let x = firstDayIndex; x > 0; x--) {
         const div = document.createElement("div");
         div.classList.add("cal-day");
@@ -82,15 +85,15 @@ function renderCalendar() {
         const div = document.createElement("div");
         div.classList.add("cal-day");
         
-        const checkDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), i);
+        const checkDate = new Date(year, month, i);
         
         // Tandai Hari Minggu
         if (checkDate.getDay() === 0) div.classList.add("sunday");
         
         // Tandai Hari Ini
         if (i === today.getDate() && 
-            currentDate.getMonth() === today.getMonth() && 
-            currentDate.getFullYear() === today.getFullYear()) {
+            month === today.getMonth() && 
+            year === today.getFullYear()) {
             div.classList.add("today");
         }
 
@@ -101,13 +104,17 @@ function renderCalendar() {
 
 // --- Kontrol Navigasi Bulan ---
 function changeMonth(event, offset) {
-    if (event) event.stopPropagation(); // Stop agar panel tidak tertutup saat klik panah
+    if (event) event.stopPropagation(); 
+    
+    // Set tanggal ke 1 untuk menghindari bug loncat bulan di tanggal 31
+    currentDate.setDate(1);
     currentDate.setMonth(currentDate.getMonth() + offset);
     renderCalendar();
 }
 
 // --- Buka/Tutup Panel Kalender ---
-function toggleCalendar() {
+function toggleCalendar(event) {
+    if (event) event.stopPropagation(); // Mencegah bubbling ke document
     const panel = document.getElementById("calendar-panel");
     if (!panel) return;
 
@@ -118,13 +125,26 @@ function toggleCalendar() {
 }
 
 // ==========================================
-// 4. OPERASIONAL (STARTUP)
+// 4. OPERASIONAL & EVENT LISTENERS
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Jalankan jam setiap detik
+    // Jalankan jam real-time
     setInterval(updateClock, 1000);
     updateClock();
     
-    // Render kalender awal
+    // Inisialisasi kalender
     renderCalendar();
+
+    // Fitur: Klik di mana saja di luar panel untuk menutup kalender
+    document.addEventListener("click", (e) => {
+        const panel = document.getElementById("calendar-panel");
+        const clock = document.querySelector(".clock-container");
+        
+        if (panel && panel.style.display === "block") {
+            // Jika yang diklik bukan bagian dari panel atau container jam, tutup panel
+            if (!panel.contains(e.target) && !clock.contains(e.target)) {
+                panel.style.display = "none";
+            }
+        }
+    });
 });
