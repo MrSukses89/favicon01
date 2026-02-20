@@ -170,35 +170,35 @@ const songList = [
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "barat 01",
+        title: "barat - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/barat%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "barat 02",
+        title: "barat - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/barat%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "barat 03",
+        title: "barat - 03",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/barat%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "ghibli 01",
+        title: "ghibli - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ghibli%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "ghibli 02",
+        title: "ghibli - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/gibli%2002.mp3",
@@ -213,21 +213,21 @@ const songList = [
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "rock 01",
+        title: "rock - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/rock%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "rock 02",
+        title: "rock - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/rock%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "rock 03",
+        title: "rock - 03",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/rock%2003.mp3",
@@ -241,49 +241,49 @@ const songList = [
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 01",
+        title: "Clasic - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 02",
+        title: "Clasic - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 03",
+        title: "Clasic - 03",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 04",
+        title: "Clasic - 04",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2004.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 05",
+        title: "Clasic - 05",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2005.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 06",
+        title: "Clasic - 06",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2006.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Clasic 07",
+        title: "Clasic - 07",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2007.mp3",
@@ -291,42 +291,42 @@ const songList = [
 
     },
 {
-        title: "Clasic 08",
+        title: "Clasic - 08",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/clasic%2008.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "yiruma 01",
+        title: "yiruma - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/yiruma%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "yiruma 02",
+        title: "yiruma - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/yiruma%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Padi 01",
+        title: "Padi - 01",
         artist: "Padi",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/padi%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Padi 02",
+        title: "Padi - 02",
         artist: "Padi",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/padi%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Padi 03",
+        title: "Padi - 03",
         artist: "Padi",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/padi%2003.mp3",
@@ -334,35 +334,35 @@ const songList = [
     },
 
 {
-        title: "Viera 01",
+        title: "Viera - 01",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/viera%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Viera 02",
+        title: "Viera - 02",
         artist: "Various Artists",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/viera%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Didi Kempot 01",
+        title: "Didi Kempot - 01",
         artist: "Didi Kempot",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/didi%20kempot%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Didi Kempot 02",
+        title: "Didi Kempot - 02",
         artist: "Didi Kempot",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/didi%20kempot%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Didi Kempot 03",
+        title: "Didi Kempot - 03",
         artist: "Didi Kempot",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/didi%20kempot%2003.mp3",
@@ -376,7 +376,7 @@ const songList = [
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Scorpion 01",
+        title: "Scorpion - 01",
         artist: "Scorpion",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/Sorpion%2001.mp3",
@@ -390,49 +390,49 @@ const songList = [
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Scorpion 03",
+        title: "Scorpion - 03",
         artist: "Scorpion",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/Sorpion%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Andmesh 01",
+        title: "Andmesh - 01",
         artist: "Andmesh",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/andmesh%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Andmesh 02",
+        title: "Andmesh - 02",
         artist: "Andmesh",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/andmesh%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ungu 01",
+        title: "Ungu - 01",
         artist: "Ungu",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ungu%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ungu 02",
+        title: "Ungu - 02",
         artist: "Ungu",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ungu%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ungu 03",
+        title: "Ungu - 03",
         artist: "Ungu",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ungu%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Noah 01",
+        title: "Noah - 01",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%20001.mp3",
@@ -440,7 +440,7 @@ const songList = [
     },
 
 {
-        title: "Noah 02",
+        title: "Noah - 02",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%2002.mp3",
@@ -449,28 +449,28 @@ const songList = [
         
     },
 {
-        title: "Noah 03",
+        title: "Noah - 03",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Noah 04",
+        title: "Noah - 04",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%2004.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Noah 05",
+        title: "Noah - 05",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%2005.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Noah 06",
+        title: "Noah - 06",
         artist: "Noah",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/noah%2006.mp3",
@@ -506,85 +506,298 @@ const songList = [
     },
 
 {
-        title: "Naff 01",
+        title: "Naff - 01",
         artist: "Naff",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/naff%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Naff 02",
+        title: "Naff - 02",
         artist: "Naff",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/naff%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Naff 03",
+        title: "Naff - 03",
         artist: "Naff",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/naff%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Geisha 01",
+        title: "Geisha - 01",
         artist: "Geisha",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/geisya%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Geisha 02",
+        title: "Geisha - 02",
         artist: "Geisha",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/geisya%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Adele 01",
+        title: "Adele - 01",
         artist: "Adele",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/adele%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Adele 02",
+        title: "Adele - 02",
         artist: "Adele",
         // Link sudah diperbaiki ke format RAW yang benar
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/adele%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Adele 03",
+        title: "Adele - 03",
         artist: "Adele",
         // Link sudah diperbaiki ke format RAW yang benar   
         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/adele%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ed Sheeran 01",
+        title: "Ed Sheeran - 01",
         artist: "Ed Sheeran",
         // Link sudah diperbaiki ke format RAW yang benar
          src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ed%20sheeran%2001.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ed Sheeran 02",
+        title: "Ed Sheeran - 02",
         artist: "Ed Sheeran",
         // Link sudah diperbaiki ke format RAW yang benar
          src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ed%20sheeran%2002.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
 {
-        title: "Ed Sheeran 03",
+        title: "Ed Sheeran - 03",
         artist: "Ed Sheeran",
         // Link sudah diperbaiki ke format RAW yang benar
          src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/ed%20sheeran%2003.mp3",
         cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
     },
+{
+        title: "Dewa 19 - 01",
+        artist: "Dewa 19",
+        // Link sudah diperbaiki ke format RAW yang benar
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/dewa%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Dewa 19 - 02",
+        artist: "Dewa 19",
+        // Link sudah diperbaiki ke format RAW yang benar   
+            src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/dewa%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Dewa 03",
+        artist: "Dewa 19",
+        // Link sudah diperbaiki ke format RAW yang benar   
+        src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/dewa%2003.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Tiara Andini - 01",
+        artist: "Tiara Andini",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/tiara%20andini%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Tiara Andini -02",
+        artist: "Tiara Andini",
+        // Link sudah diperbaiki ke format RAW yang benar   
+            src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/tiara%20andini%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Radja -01",
+        artist: "Radja",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/radja%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Radja -02",
+        artist: "Radja",
+        // Link sudah diperbaiki ke format RAW yang benar   
+            src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/radja%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Radja - 03",
+        artist: "Radja",
+        // Link sudah diperbaiki ke format RAW yang benar   
+        src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/radja%2003.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Indo 2026 - 01",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/indo%202026.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Indo 2026 - 02",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/indo%202026%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
 
+  
+{
+        title: "Indo 2026 - 03",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/indo%202026%2003.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Lagu Cafe - 01",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+   },
+{
+        title: "Lagu Cafe - 02",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Lagu Cafe - 03",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2003.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    }, 
+{
+        title: "Lagu Cafe - 04",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2004.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Lagu Cafe - 05",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2005.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Lagu Cafe - 06",
+        artist: "Various Artists",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/lagu%20cafe%2006.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Bon Jovi - 01",
+        artist: "Bon Jovi",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/bon%20jovi%2001.mp3", 
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Bon Jovi - 02",
+        artist: "Bon Jovi",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/bon%20jovi%2002.mp3", 
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{   
+        title: "Bon Jovi - 03",
+        artist: "Bon Jovi",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/bon%20jovi%2003.mp3", 
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Bon Jovi - 04",
+        artist: "Bon Jovi",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/bon%20jovi%2004.mp3", 
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Jamrud - 01",
+        artist: "Jamrud",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/jamrud%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+   },
+{
+        title: "Jamrud - 02",
+        artist: "Jamrud",
+        // Link sudah diperbaiki ke format RAW yang benar       
+            src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/jamrud%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+
+        title: "Last Child - 01",
+        artist: "Last Child",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/last%20child%2001mp3.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+   },
+{
+        title: "Last Child - 02",
+        artist: "Last Child",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/last%20child%2002mp3.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"  
+    },
+{
+        title: "Boomerang - 01",
+        artist: "Boomerang",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/boomerang%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Boomerang - 02",
+        artist: "Boomerang",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/boomerang%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Kangen Band - 01",
+        artist: "Kangen Band",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/kangen%20band%2001.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Kangen Band - 02",
+        artist: "Kangen Band",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/kangen%20band%2002.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+{
+        title: "Kangen Band - 03",
+        artist: "Kangen Band",
+        // Link sudah diperbaiki ke format RAW yang benar   
+         src: "https://raw.githubusercontent.com/MrSukses89/my_music/main/kangen%20band%2003.mp3",
+        cover: "linear-gradient(135deg, #ff7e5f, #feb47b)"
+    },
+
+    
 ];
-
 
 
 // --- 2. SETUP AUDIO ---
@@ -740,3 +953,35 @@ if (searchInput) {
         renderPlaylist(keyword); // Memanggil fungsi render yang sudah saya buat sebelumnya
     });
 }s
+
+
+// Pastikan variabel audio kamu sudah terdefinisi secara global
+// Jika belum ada, pastikan baris ini ada: const audio = new Audio();
+
+function changeVolume(val) {
+    audio.volume = val;
+    const volIcon = document.getElementById('vol-icon');
+    
+    // Ubah ikon berdasarkan level volume
+    if (val == 0) {
+        volIcon.innerText = "🔇";
+    } else if (val < 0.5) {
+        volIcon.innerText = "🔉";
+    } else {
+        volIcon.innerText = "🔊";
+    }
+}
+
+// Fungsi mute klik ikon
+function toggleMute() {
+    const volSlider = document.getElementById('volume-slider');
+    if (audio.volume > 0) {
+        audio.oldVolume = audio.volume; // Simpan volume terakhir
+        audio.volume = 0;
+        volSlider.value = 0;
+    } else {
+        audio.volume = audio.oldVolume || 1;
+        volSlider.value = audio.volume;
+    }
+    changeVolume(audio.volume);
+}
