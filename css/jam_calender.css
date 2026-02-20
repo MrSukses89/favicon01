@@ -24,8 +24,8 @@
 /* Kartu Kalender */
 .calendar-card {
     position: absolute;
-    top: 2px;
-    left: -470px;
+    top: 200px;
+    right: 0px;
     width: 280px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -72,17 +72,13 @@
 
 .cal-days {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(7, 1fr); /* Membagi 7 kolom sama rata */
     text-align: center;
 }
 
 .cal-day {
-    padding: 8px;
-    font-size: 14px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 8px;
-    transition: 0.2s;
 }
 
 .cal-day:hover { background: #f0f0f0; }
