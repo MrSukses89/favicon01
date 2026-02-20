@@ -13,19 +13,33 @@
     <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/biodata.css">
     <link rel="stylesheet" href="css/note.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
     </style>
 </head>
 <body>
-<!--Search-->
-<div class="search-wrapper">
-    <form action="https://www.google.com/search" method="GET" target="_blank" class="search-form">
-        <input type="text" name="q" placeholder="Cari di Google..." class="search-input" autocomplete="off">
-        <button type="submit" class="search-btn">
-            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
-        </button>
-    </form>
+ 
+<!--Search google-->
+
+<div class="google-search-container">
+    <div class="google-search-box">
+        <div class="google-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+        </div>
+        
+        <input type="text" id="mainSearchInput" placeholder="Telusuri di Google atau ketik URL" autocomplete="off">
+        
+        <div class="google-mic">
+            <i class="fas fa-microphone"></i>
+        </div>
+    </div>
 </div>
+
 
 <!--Wallpaper tombol-->
 <div class="wallpaper-controls">
@@ -38,7 +52,7 @@
 
         <div class="v-divider"></div>
 
-        <input type="checkbox" id="autoWallpaperCheck" onchange="toggleAutoWallpaper()" title="Auto Ganti (2 Menit)">
+        <input type="checkbox" id="autoWallpaperCheck" onchange="toggleAutoWallpaper()" title="Auto Ganti (10 Menit)">
     </div>
 </div>
 
@@ -62,11 +76,16 @@
 </div>
 
     <div id="calendar-panel" class="calendar-card">
-        <div class="cal-header">
-            <button onclick="changeMonth(-1)">❮</button>
-            <span id="cal-month-year"></span>
-            <button onclick="changeMonth(1)">❯</button>
-        </div>
+        
+        
+       <div class="cal-header">
+    <button onclick="changeMonth(event, -1)">❮</button>
+    <span id="cal-month-year"></span>
+    <button onclick="changeMonth(event, 1)">❯</button>
+    </div>
+
+
+
         <div class="cal-weekdays">
             <div class="sun">Min</div>
             <div>Sen</div>
@@ -139,80 +158,94 @@
     </div>
     
 <!--Left Sidebar-->
+<!--Wa-->
+<div class="nav-item" style="position: relative;">
+    <span class="tooltip-side">WhatsApp</span>
+    <div class="nav-icon" onclick="window.open('https://web.whatsapp.com/')">
+        <img src="ico/kantor/wa2.png" alt="WhatsApp" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
 
- <!--Music-->   
-    <div class="nav-item" style="position: relative;"> 
-        <span class="tooltip-side">Music</span> 
-        <div class="nav-icon" onclick="toggleMusic()">🎵</div>
-
-        <div id="music-card" class="music-card">
-            
-            
-            <div class="music-header">
-    <span></span>
-    <div style="display: flex; gap: 10px; align-items: center;">
-        <button onclick="togglePlaylist()" class="list-toggle-btn" id="list-arrow" title="Daftar Lagu">
-            <span class="arrow-icon">➤</span>
-        </button>
-        
-        <button onclick="toggleMusic()" class="close-music-btn" title="Tutup" 
-            style="background: none; border: none; color: white; cursor: pointer; font-size: 20px; font-weight: bold; line-height: 1; padding: 5px; opacity: 0.7; transition: 0.3s;">
-            ×
-        </button>
     </div>
 </div>
-    
-            <div class="music-layout">
-                <div class="music-main-player">
-                    <div class="album-art" id="album-bg">
-                        <div id="wave-container" class="wave-container">
-                            <div class="stroke"></div>
-                            <div class="stroke"></div>
-                            <div class="stroke"></div>
-                        </div>
-                        <span id="album-icon" style="font-size: 40px;">🎵</span>
-                    </div>
-                    
-                    <div class="music-info">
-                        <h4 id="song-title">Pilih Lagu</h4>
-                        <p id="artist-name">Artis</p>
-                    </div>
-                    
-                    <div class="music-controls">
-                        <button onclick="prevSong()">⏮</button>
-                        <button id="play-btn" class="play-btn" onclick="playMusic()">▶</button>
-                        <button onclick="nextSong()">⏭</button>
-                    </div>
 
-                    <div class="progress-container" onclick="seekAudio(event)">
-                        <div class="progress-bar">
-                            <div id="progress" class="progress"></div>
-                        </div>
-                        <div class="time-info">
-                            <span id="current-time">0:00</span>
-                            <span id="duration-time">0:00</span>
-                       </div>
-                    </div>
-                </div>
+<!--Wa-->
+ <!--Music-->   
+<div class="nav-item" style="position: relative;"> 
+    <span class="tooltip-side">Music</span> 
+    <div class="nav-icon" onclick="toggleMusic()">🎵</div>
 
-                <div id="side-playlist" class="song-list-side">
-                    <div class="song-list-container">
-                        <ul id="playlist"></ul>
-                    </div>
-                </div>
+    <div id="music-card" class="music-card">        
+        <div class="music-header">
+            <span></span>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button onclick="togglePlaylist()" class="list-toggle-btn" id="list-arrow" title="Daftar Lagu">
+                    <span class="arrow-icon">➤</span>
+                </button>
+                <button onclick="toggleMusic()" class="close-music-btn" title="Tutup" 
+                    style="background: none; border: none; color: white; cursor: pointer; font-size: 20px; font-weight: bold; line-height: 1; padding: 5px; opacity: 0.7; transition: 0.3s;">
+                    ❎
+                </button>
             </div>
         </div>
-    </div>
+    
+        <div class="music-layout">
+            <div class="music-main-player">
+                <div class="album-art" id="album-bg">
+                    <div id="wave-container" class="wave-container">
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                    </div>
+                    <span id="album-icon" style="font-size: 40px;">🎵</span>
+                </div>
+                
+                <div class="music-info">
+                    <h4 id="song-title">Pilih Lagu</h4>
+                    <p id="artist-name">Artis</p>
+                </div>
+                
+                <div class="music-controls">
+                    <button onclick="prevSong()">⏮</button>
+                    <button id="play-btn" class="play-btn" onclick="playMusic()">▶</button>
+                    <button onclick="nextSong()">⏭</button>
+                </div>
+
+                <div class="progress-container" onclick="seekAudio(event)">
+                    <div class="progress-bar">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                    <div class="time-info">
+                        <span id="current-time">0:00</span>
+                        <span id="duration-time">0:00</span>
+                    </div>
+                </div>
+
+                <div class="volume-container">
+                    <span id="vol-icon" class="volume-icon" onclick="toggleMute()">🔊</span>
+                    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+                </div>
+            </div>
+
+            <div id="side-playlist" class="song-list-side">
+                <div class="search-wrapper">
+                    <input type="text" id="songSearch" placeholder="Cari judul lagu..." autocomplete="off">
+                    <i class="fas fa-search search-icon"></i>
+                </div>            
+                <div class="song-list-container">
+                    <ul id="playlist"></ul>
+                </div>
+            </div>
+        </div> </div> </div>
 
 <!--Music-->
+
 <!--calculator-->
 <div class="nav-item" style="position: relative;">
-    <span class="tooltip-side">Calculator</span>
-    <div class="nav-icon" onclick="toggleCalculator()">🖩</div>
+    <span class="tooltip-side">Calculator Cuan</span>
+    <div class="nav-icon" onclick="toggleCalculator()">🧮</div>
 
     <div id="calc-card" class="calc-card">
         <div class="calc-header">
-            <span>Calculator</span>
+            <span>Calculator Cuan</span>
             <button onclick="toggleCalculator()" class="close-btn">×</button>
         </div>
         <input type="text" id="calc-display" readonly placeholder="0">
@@ -256,7 +289,7 @@
 
     <div class="dock-item">
         <span class="tooltip">Application</span> 
-        <div class="dock-icon" onclick="toggleMenu('application')">✂</div>
+        <div class="dock-icon" onclick="toggleMenu('application')">🌐</div>
     </div>
 
     <div class="dock-item">
@@ -293,42 +326,42 @@
 
 
 <div id="buddha" class="menu-container" style="display: none;">
-    <a href="#" target="_blank" class="app-link">
+    <a href="https://docs.google.com/spreadsheets/d/1S39GV7v4MDx9jPLPReIdoh4MARXj2NKp9xFAWpBbUO4/pubhtml?gid=0&single=true" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
             <img src="ico/Bimas_Buddha/JUKNIS_REALTIME.png" alt="My Game">
         </div>
         <span class="app-name">Juknis Real Time</span>
     </a>
 
-    <a href="#" target="_blank" class="app-link">
+    <a href="https://drive.google.com/drive/folders/1_aXYquJcngwp9fQUtX0rLl2z8cXpGoS8" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
             <img src="ico/Bimas_Buddha/Drive SKP Kemenag.PNG" alt="drive skp">
         </div>
         <span class="app-name">Drive SKP</span>
     </a>
 
-    <a href="#" target="_blank" class="app-link">
+    <a href="https://drive.google.com/drive/folders/1XmVMF_QX7dvz_g-PIv4LNFWRnkih10RM" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
             <img src="ico/Bimas_Buddha/SuratPusat.PNG" alt="surat pusat">
         </div>
         <span class="app-name">Surat Pusat</span>
     </a>
     
-    <a href="#" target="_blank" class="app-link">
+    <a href="https://drive.google.com/drive/folders/1ZaKLrh0rAOwD9XaaOWksv8RKGl-87-De" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
         <img src="ico/Bimas_Buddha/DriveEkin2023.PNG" alt="DriveEkin2023">
     </div>
     <span class="app-name">Drive Ekin 2023</span>
     </a>
 
-    <a href="#" target="_blank" class="app-link">
+    <a href="https://www.portaldatabuddha.com/master-data-daerah" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
         <img src="ico/Bimas_Buddha/Coat_of_arms_of_East_Kalimantan.svg" alt="master data">
        </div>
     <span class="app-name">Master Data</span>
     </a>
 
-    <a href="#/" target="_blank" class="app-link">
+    <a href="https://sioribuddha.kemenag.go.id/" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
             <img src="ico/Bimas_Buddha/siori.png" alt="siori buddha">
         </div>
@@ -339,13 +372,6 @@
 <!--aplication-->
 <div id="application" class="menu-container" style="display: none;">
    
-    <a href="https://web.whatsapp.com/" target="_blank" class="app-link">
-        <div class="app-icon" style="background: #25D366;"> 
-            <img src="ico/kantor/wa.png" alt="WhatsApp">
-        </div>
-        <span class="app-name">WhatsApp</span>
-    </a>
-
     <a href="https://pusaka-v3.kemenag.go.id/" target="_blank" class="app-link">
         <div class="app-icon" style="background: #25D366;"> <img src="ico/kantor/pusaka.jpg" alt="pusaka">
         </div>
@@ -481,6 +507,15 @@
         </div>
         <span class="app-name">fmhy</span>
     </a>
+
+    <a href="https://www.jango.com/" target="_blank" class="app-link">
+        <div class="app-icon" style="background: none;">
+            <img src="ico/media_sosial/Jango.png" alt="jango">
+        </div>
+        <span class="app-name">Jango.com</span>
+    </a>
+
+ 
 </div>
 
 <!--home menu 3-->
@@ -520,9 +555,6 @@
         </div>
         <span class="app-name">perplexity</span>
 
-
-
-
     <a href="https://www.canva.com/account-checkup?flow=webauthn&redirect=%2Fid_id%2F" target="_blank" class="app-link">
         <div class="app-icon" style="background: none;">
             <img src="ico/ai/canva-icon.png" alt="canva">
@@ -550,6 +582,21 @@
         </div>
         <span class="app-name">github</span>
     </a>
+
+    <a href="https://www.figma.com/" target="_blank" class="app-link">
+        <div class="app-icon" style="background: none;">
+            <img src="ico/ai/figma.png" alt="figma">
+        </div>
+        <span class="app-name">Figma</span>
+    </a>
+
+    <a href="https://www.tawk.to/login" target="_blank" class="app-link">
+        <div class="app-icon" style="background: none;">
+            <img src="ico/ai/tawk.png" alt="tawk">
+        </div>
+        <span class="app-name">Tawk.to</span>   
+    </a>
+
 </div>
 
 <!--home menu 4-->
@@ -705,18 +752,18 @@
             <button onclick="clearNote()" style="background:#ff5252; color:white; border:none; border-radius:3px; cursor:pointer;">Hapus</button>
             <span id="status">Tersimpan</span>
  </div>
- 
-<div id='tawk_6997289a8e6a0f1c3404dc28'></div>
-<!--Start of Tawk.to Script-->
+
+ <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_6997289a8e6a0f1c3404dc28';
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/6997289a8e6a0f1c3404dc28/1jhs5rh2d';
+s1.src='https://embed.tawk.to/6997289a8e6a0f1c3404dc28/1jhs6oj5r';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);})();
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 <!--End of Tawk.to Script-->
 
@@ -726,11 +773,13 @@ s0.parentNode.insertBefore(s1,s0);})();
 <script src="js/music_nav_left.js"></script>
 <script src="js/calculator.js"></script>
 <script src="js/biodata.js"></script>
+<script src="js/search_google.js"></script>
 
 
 
 
 <script>
+  
 </script>
 </body>
 </html>
